@@ -1,0 +1,193 @@
+#i1:hover{
+  opacity: 1.0;
+}
+#i2:hover{
+  opacity: 1.0;
+}
+#i3:hover{
+  opacity: 1.0;
+}
+#i4:hover{
+  opacity: 1.0;
+}
+#i5:hover{
+  opacity: 1.0;
+}
+#i1{
+  position: fixed;             /*fix this!!!!*/
+  left: 300px;
+  top: 200px;
+  bottom: 200px;
+  right: 300px;
+  opacity: 0.2;
+}
+#i2{
+  position: fixed;
+  left: 650px;
+  right: 700px;
+  bottom: 200px;
+  top: 200px;
+  opacity: 0.2;
+}
+#i3{
+  position: fixed;
+  left: 300px;
+  top: 600px;
+  opacity: 0.2;
+}
+#i4{
+  position: fixed;
+  left: 650px;
+  top: 600px;
+  opacity: 0.2;
+}
+#i5{
+  position: fixed;
+  left: 475px;
+  top: 400px;
+  opacity: 0.2;
+}
+head,header,footer {
+  font-family: 'Charm';
+  font-weight: bold;
+}
+body {
+  font-family: "Inconsolata";
+}
+.Games {
+  animation-name: game-ani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes game-ani{
+  0%  {background-color: red; color: white; height: 90px; width: 90px;}
+  20% {background-color: purple; color: white; height: 100px; width: 100px;}
+  40% {background-color: blue; color: white; height: 110px; width: 110px;}
+  60% {background-color: green; color: white; height: 110px; width: 110px;}
+  80% {background-color: yellow; color: black; height: 100px; width: 100px;}
+  100% {background-color: orange; color:white; height: 90px; width: 90px;}
+}
+#tsquare{
+  height: 35px;
+  width: 110px;
+  color: white;
+  background-color: #000000
+}
+#tsquare:hover {
+  background-color: blue
+}
+#para1{
+  background-image: linear-gradient(to right,#28036a,#ff4545,#cc5500);
+  text-align: center;
+}
+.para1-text{
+  font-size: 50px;
+  font-weight: 'bold'
+}
+#sign_off{
+  text-align: right
+}
+#foot{
+  font-size: 10px
+}
+#dropd {
+position: relative;
+display: inline-block;
+}
+#drop-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+width: 110px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+background-color: black;
+color: white;
+}
+#dropd:hover #drop-content {
+display: block;
+}
+#Main {
+height: 90px;
+width: 90px;
+background-color: #000000;
+border-radius: 100%;
+color: white
+}
+#square {
+height: 25px;
+width: 110px;
+color: white;
+background-color: #000000
+}
+#nsquare {
+height: 25px;
+width: 110px;
+color: white;
+background-color: #000000
+}
+#square:hover {
+background-color: blue
+}
+button.Un{
+opacity: 0.6;
+cursor: not-allowed;
+}
+#matrix{
+  display: none;
+}
+table, th {
+border: solid black;
+}
+#foot {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+}
+#Q {
+  color: green;
+  font-size: 40px;
+}
+#B {
+  color:blue
+}
+#char {
+  display: block;
+}
+#spec {
+  display:none;
+}
+#div {
+  display:none;
+  background-color: "white";
+}
+#demo2,#myImg2,#demo3,#demo7,#Nameu {
+  display:none
+}
+#atks {
+  margin:auto;
+  display:none;
+}
+#hyper {
+  text-decoration:none;
+}
+#sup-spec {
+  background-color: white;
+}
+#Gaammees {
+  background-color: black;
+}
+#white {
+  color: white;
+}
+#Yas:hover {
+  height:200px;
+  width: 200px
+}
+#Yas {
+  height:100px;
+  width: 100px;
+}

@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Names</title>
+</head>
+<body style="background-color:red";>
+  <h2>Name your Animal</h2>
+  <img src="Images/Alphabet_img.jpg" height="500px" width="500px" alt="alert!!!" usemap="#select_name">
+  <br>
+  <button onclick="escape()">Submit</button>
+  <button onclick="key_select('bks')">Backspace</button>
+  <button onclick="key_select('space')">Space</button>
+  <p><strong>Notice:</strong> This cannot be changed later.</p>
+  <map name="select_name">
+    <area shape="rect" coords="30,30,75,120" onclick="key_select('A')"> <!--top-left>bottom-left-->
+    <area shape="rect" coords="95,30,140,120" onclick="key_select('B')"> <!--65,0,70,0-->
+    <area shape="rect" coords="160,30,200,120" onclick="key_select('C')">
+    <area shape="rect" coords="225,30,265,120" onclick="key_select('D')">
+    <area shape="rect" coords="290,30,330,120" onclick="key_select('E')">
+    <area shape="rect" coords="355,30,395,120" onclick="key_select('F')">
+    <area shape="rect" coords="420,30,460,120" onclick="key_select('G')">
+
+    <area shape="rect" coords="20,150,75,220" onclick="key_select('H')">
+    <area shape="rect" coords="85,150,130,220" onclick="key_select('I')">
+    <area shape="rect" coords="150,150,190,220" onclick="key_select('J')">
+    <area shape="rect" coords="215,150,255,220" onclick="key_select('K')">
+    <area shape="rect" coords="280,150,310,220" onclick="key_select('L')">
+    <area shape="rect" coords="340,150,390,220" onclick="key_select('M')">
+    <area shape="rect" coords="410,150,470,220" onclick="key_select('N')">
+
+    <area shape="rect" coords="20,260,75,330" onclick="key_select('O')">
+    <area shape="rect" coords="85,260,125,330" onclick="key_select('P')">
+    <area shape="rect" coords="150,260,205,350" onclick="key_select('Q')">
+    <area shape="rect" coords="225,260,270,330" onclick="key_select('R')">
+    <area shape="rect" coords="285,260,330,330" onclick="key_select('S')">
+    <area shape="rect" coords="360,260,400,330" onclick="key_select('T')">
+    <area shape="rect" coords="420,260,470,330" onclick="key_select('U')">
+
+    <area shape="rect" coords="80,370,125,440" onclick="key_select('V')">
+    <area shape="rect" coords="145,370,210,440" onclick="key_select('W')">
+    <area shape="rect" coords="230,370,280,440" onclick="key_select('X')">
+    <area shape="rect" coords="295,370,340,440" onclick="key_select('Y')">
+    <area shape="rect" coords="360,370,410,440" onclick="key_select('Z')">
+  </map>
+  <p id=Hero_name style="color:white";></p>
+<script>
+  function key_select(letter){
+    if(letter!="bks"){
+      if(letter!="space"){
+    var Hero_name = Hero_name+=letter
+    document.getElementById("Hero_name").innerHTML+=letter;
+  }
+}
+    if(letter=="bks"){
+      var str = document.getElementById("Hero_name").innerHTML;
+      var len = str.length
+      var len = len-1
+      var nstr = str.slice(0,len);
+      document.getElementById("Hero_name").innerHTML = nstr;
+    }
+    if(letter=="space"){
+      document.getElementById("Hero_name").innerHTML+=" ";
+    }
+  }
+  function escape(){
+    alert('Submitting name')
+  }
+</script>
+</body>
+</html>

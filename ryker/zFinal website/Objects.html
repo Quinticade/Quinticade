@@ -1,0 +1,29 @@
+   function Object_creation(N,P,L,F,Cp){
+    var One={
+      Name     : N,
+      Power    : P,
+      Level    : L,
+      FP       : F,
+      CFP      : Cp,
+      Nature   : function(){
+        var Natures = [
+          "Leader",
+          "Independant",
+          "Quiet",
+          "Kind",
+          "Happy",
+          "Hasty"
+        ];
+        function Pick_nature(){
+          var selected_nature = Natures[Math.floor(Math.random()*6)];
+          return selected_nature;
+      }
+      return Pick_nature();
+      },
+      Info     : function(){
+        return this.Name + "<br>" + this.Power + "<br>" + this.Level + "<br>" +
+        this.FP + "<br>" + this.CFP + "<br>" + this.Nature();
+      }
+    };
+    document.getElementById("demo").innerHTML = One.Info();
+  }

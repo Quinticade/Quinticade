@@ -1,0 +1,45 @@
+<!--Create the display() function that displays the input fields
+on seperate lines in <p id='text'>. Create the greet() function
+so that it displays 'Welcome fname lname!' with the fname and lname
+from the form in <p id='greet'>.
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Exercise 5</title>
+</head>
+<body>
+  <h1>Welcome to JavaScript Programming</h1>
+  <form id='info'>
+    First name: <input type="text" name="fname">
+    <br>
+    Last name: <input type="text" name="lname">
+  </form>
+  <button onclick="display()">Submit</button>
+  <p>Click "Submit" to display the value of each element in the form.<br>
+  Click "Greeting" to display a personalized greeting.<br>
+  </p>
+  <br>
+  <p id='text'></p>
+  <p id='greet'></p>
+  <button onclick="greet()">Greeting</button>
+  <br>
+  <script>
+  function display(){
+    var x = document.getElementById("info").elements[0].value;
+    var x = x + D"<br>";
+    var y = document.getElementById("info").elements[1].value;
+    var z = x+y;
+    document.getElementById("text").innerHTML = z;
+  }
+  function greet(){
+    var x = document.getElementById("info").elements[0].value;
+    var x = x + " ";
+    var y = document.getElementById("info").elements[1].value;
+    var z = x+y;
+    var z = "Welcome " + z;
+    document.getElementById("greet").innerHTML = z;
+  }
+  </script>
+</body>
+</html>
