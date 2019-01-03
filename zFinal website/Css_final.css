@@ -56,17 +56,17 @@ body {
 }
 .Games {
   animation-name: game-ani;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 @keyframes game-ani{
-  0%  {background-color: red; color: white; height: 90px; width: 90px;}
-  20% {background-color: purple; color: white; height: 100px; width: 100px;}
-  40% {background-color: blue; color: white; height: 110px; width: 110px;}
-  60% {background-color: green; color: white; height: 110px; width: 110px;}
-  80% {background-color: yellow; color: black; height: 100px; width: 100px;}
-  100% {background-color: orange; color:white; height: 90px; width: 90px;}
+  0%  {background-color: red; color: white;}
+  20% {background-color: purple; color: white;}
+  40% {background-color: blue; color: white;}
+  60% {background-color: green; color: white;}
+  80% {background-color: yellow; color: black;}
+  100% {background-color: orange; color:white;}
 }
 #tsquare{
   height: 35px;
