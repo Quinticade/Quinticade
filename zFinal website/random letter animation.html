@@ -1,4 +1,11 @@
+<form id='info'>
+  Word: <input type="text" name="word">
+</form>
+<button onclick="times()">Submit</button>
 <p id="letters"></p>
+<p id="letters1"></p>
+<p id="letters2"></p>
+<p id="letters3"></p>
 <script>
 var let = [
 "A",
@@ -38,15 +45,28 @@ var let = [
 "9"
 ];
 function times(){
+var Road = "letters"
 var num = Math.floor((Math.random() * 34) + 0)
 var B = let[num]
-if (B!="R"){
-  document.getElementById("letters").innerHTML = let[num]
+var X = document.getElementsByTagName("input")[0].value;
+var XT = X.charAt(0)
+if (B!=XT){
+document.getElementById(Road).innerHTML = XT
 setTimeout(times, 100)
 }
 else{
-  document.getElementById("letters").innerHTML = let[num]
+  document.getElementById(Road).innerHTML = ""
+  document.getElementById(Road).innerHTML += XT
+  Nore(nor)
+  var Road = "letters" + nor
+  var X = X.slice(1,4)
+  if(X.length != 0){
+    times()
+  }
 }
 }
-times()
+function Nore(nor){
+  var nor = nor + 1
+  return nor
+}
 </script>
