@@ -1,0 +1,30 @@
+<button onclick="job()">Play</button>
+<img id = "coin" src="Images/gold.jpg"></img>
+<!--<p id="win">Heads: 0</p>
+<p id="lose">Tails: 0</p>-->
+<script>
+var X = 0
+var Y = 0
+var H = "Heads: "
+var T = "Tails: "
+var listimg = [
+  "Images/gd-heads.jpg",
+  "Images/gold-tails.PNG"
+]
+function job(){
+var ls = Math.floor((Math.random()*-2)+2)
+document.getElementById("coin").src = listimg[ls]
+/*if (ls == 0){
+  var X = document.getElementById("win").innerHTML
+  X.slice(1,7)
+  parseFloat(X)
+  var X = X + 1
+  parseFloat(X)
+  document.getElementById("win").innerHTML = H + X
+}
+else if (ls == 1){
+  var Y = Y + 1
+  document.getElementById("lose").innerHTML = T + Y
+}*/
+}
+</script>
